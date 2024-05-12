@@ -97,6 +97,77 @@ div>.login-btn:hover{
     } */
 }
 
-/* Login Page Style Sheet Ends Here */
+/* Login, signup, pwdreset Page Style Sheet Ends Here */
 
-/* SignUp Page Starts Here */
+/* Expense list and add expense Page Starts Here */
+
+
+
+.modal-header{
+    font-weight: 700;
+}
+
+.required::after{
+    content: " *";
+    color: red;
+}
+
+.required{
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+table tr td{
+vertical-align: middle;
+}
+
+td button{
+margin: 5px;
+}
+td button i{
+font-size: 20px;
+}
+
+table thead{
+    background: rgb(21, 21, 21);
+    color: #fff;
+}
+
+.navbar{
+    background: rgb(0, 128, 113);
+}
+.btn-primary{
+    background: #01a486;
+    color: #fff;
+    border: none;
+}
+
+.btn-success{
+    background: #01a486;
+    color: #fff;
+    border: none;
+}
+
+.btn .btn-danger{
+    background-color: rgb(218, 1, 1);
+    border: none;
+}
+
+.btn-primary:hover{
+    background: #04856d;
+    color: white;
+}
+
+.btn-success:hover{
+    background: #04856d;
+    color: white;
+}
+
+.budget-form{
+    border: 3px dotted gray;
+    background: #fff;
+}
+
+.budget-input-field > input{
+    background: rgb(246, 246, 246);
+}
