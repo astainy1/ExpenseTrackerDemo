@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../bootstrap-5.3.3-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Modal | 2</title>
+</head>
+<body>
+
+    <!-- Menu bar -->
+
+    <!-- Navigation bar -->
+
+        <nav class="navbar main-nav navbar-expand-lg" style="background: rgb(0, 128, 113);">
+            <div>
+                <h2 class="h4"><a class="navbar-brand" href="#">MyMai</a></h2>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                  <ul class="navbar-nav">
+  
+                      <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                       Budget
+                      </a>
+                      <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Set Budget</a></li>
+                          <li><a class="dropdown-item" href="#">Budget Summary</a></li>
+                      </ul>
+                      </li>
+  
+                      <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Expense
+                      </a>
+                      <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Add Expense</a></li>
+                    <li><a class="dropdown-item" href="#">Expense Detail</a></li>
+                    <li><a class="dropdown-item" href="expenseReport.html">Expense Report</a></li>
+                      </ul>
+                  </li>
+  
+                <li class="nav-item dropdown">
+                  <a class="nav-link " href="#" role="button" >
+                    Report & Analysis
+                  </a>
+                </li>
+  
+                <li class="nav-item dropdown">
+                  <a class="nav-link  position-relative" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <!-- <a class="nav-link dropdown-toggle position-relative" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> -->
+                     <i class="fa fa-bell"></i>
+                     <span class="position-absolute top-5 start-100 translate-middle badge rounded-pill bg-danger">
+                      99+
+                      <span class="visually-hidden">unread messages</span>
+                    </span>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#"> Notification 1</a></li>
+                    <li><a class="dropdown-item" href="#">Notification 2 </a></li>
+                    <li><a class="dropdown-item" href="#"> Notification 3</a></li>
+                    <li><a class="dropdown-item" href="#"> Notification 4</a></li>
+                    <li><a class="dropdown-item" href="#"> Notification 5</a></li>
+                    <li><a class="dropdown-item" href="#"> Notification 5</a></li>
+                  </ul>
+                </li>
+  
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <img src="../images/user_1.png" alt="profile_img" width="40px" height="auto">
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Profile</a></li>
+                    <li><a class="dropdown-item" href="#">Logout</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+        </nav>
+
+    <!-- Navigation bar ends here -->
+
+    <!-- Main container -->
+    <section class="p-4">
+        <div class="row">
+            <div class="col-12">
+                <div class="d-flex justify-content-between align-items-center p-3 mb-3">
+                    <h4 class="fw-600  w-50">
+                        Take A Look At Your Total Expenses Per Category
+                    </h4>
+                    <button class="btn btn-success my-2 text-uppercase" ><strong>print</strong></button>
+                </div>
+            </div>
+            <div></div>
+            <div class="col-12">
+                <table class="table table-striped table-hover table-bordered text-center mt-4">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>No.</th>
+                            <th>Category</th>
+                            <th>Description</th>
+                            <th>Amount</th>
+                            <th>Date</th>
+
+                        </tr>
+                    </thead>
+                    <tbody id="data">
+                        <tr>
+                            <td>1</td>
+                            <td>Transportation</td>
+                            <td>Duala to Monrovia</td>
+                            <td>200.00</td>
+                            <td>11/05/2024</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Transportation</td>
+                            <td>Duala to Monrovia</td>
+                            <td>200.00</td>
+                            <td>16/05/2024</td>
+                           
+
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Transportation</td>
+                            <td>Duala to Monrovia</td>
+                            <td>200.00</td>
+                            <td>19/05/2024</td>
+                            
+
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Transportation</td>
+                            <td>Duala to Monrovia</td>
+                            <td>200.00</td>
+                            <td>21/05/2024</td>
+                           
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="col-12">
+                    <table class="table table-striped table-bordered text-left mt-4 table-dark">
+                        <thead>
+                            <tr>
+                                <th>Grand Total</th>
+                                <th>$</th>
+                            </tr>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+                
+            </section>
+            
+            </div> 
+                    
+        </div>
+
+    <!-- Modal to be triggered -->
+
+    <div class="modal" id="add-expense-entry-modal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">INPUT EXPENSE</h5>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="expenseDate" class="form-label required">Date</label>
+                            <input type="date" class="form-control" id="expenseDate" name="date" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="expenseCategory" class="form-label required">Category</label>
+                            <input type="text" class="form-control" id="expenseCategory" name="categoryEntry" required placeholder="Category">
+                        </div>
+                        <div class="mb-3">
+                            <label for="expenseDescription" class="form-label required"> Description</label>
+                            <input type="text" class="form-control" id="expenseDescription" name="descriptionEntry" required placeholder="Description">
+                        </div>
+                        <div class="mb-3">
+                            <label for="expenseAmountEntry" class="form-label required">Amount</label>
+                            <input type="number" class="form-control" id="expenseAmountEntry" name="expenseAmountEntry" placeholder="$" required>
+                        </div>
+
+                        <div class="modal-footer">
+                            <div class=" submit-btn  mt-2 mb-2">
+                                <button type="submit" class="btn btn-success" form="myform">Submit</button>
+                            </div>
+                            <div class="mt-2 mb-2">
+                                <button class="btn btn-danger" data-bs-dismiss="modal">Cancel</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- modal ends here-->
+
+        <!-- Footer starts here -->
+    <footer class="container mt-4">
+        <div class="row">   
+            <div class="d-flex justify-content-space-between align-items-center">
+                <div class="col-6 text-start">
+                    <div class="lead fw-lighter">
+                        <Span>Developed by: Astainy</Span>
+                    </div>
+                </div>     
+    
+                <div class="col-6 text-end">            
+                    <div class="lead fw-lighter">
+                        <Span>V.1.0</Span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    <!-- Footer Ends Here -->
+
+    <script src="../bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
